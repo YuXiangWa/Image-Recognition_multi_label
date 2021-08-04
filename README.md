@@ -1,5 +1,5 @@
 # Image-Recognition_multi_label
-## CNN經典模型VGGNET
+##  SmallerVGGNet(簡易版的VGGNet)
 ### 調用Keras、Sklearn實作多標籤影像辨識
 
 * Dataset:共2167張圖
