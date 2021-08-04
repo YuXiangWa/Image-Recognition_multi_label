@@ -70,7 +70,7 @@ print("[INFO] compiling model...")
 model = SimpleVGGNet.build(
 	width=IMAGE_DIMS[1], height=IMAGE_DIMS[0],
 	depth=IMAGE_DIMS[2], classes=len(mlb.classes_),
-	finalAct="sigmoid")#2分類用sigmoid
+	finalAct="sigmoid")#多標籤分類用sigmoid
 
 # Adam動態調整學習率
 opt = Adam(lr=INIT_LR, decay=INIT_LR / EPOCHS)
