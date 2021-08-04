@@ -1,4 +1,4 @@
-# 導入所需工具包
+# 導入所需模組和套件
 from keras.models import Sequential
 from keras.layers.normalization import BatchNormalization
 from keras.layers.convolutional import Conv2D
