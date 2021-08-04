@@ -14,5 +14,5 @@
 
 * 預測
 
-![image](https://github.com/YuXiangWa/Image-Recognition_multi_label/blob/main/Prediction.jpg)
+![image](https://github.com/YuXiangWa/Image-Recognition_multi_label/blob/main/Prediction.png)
 
