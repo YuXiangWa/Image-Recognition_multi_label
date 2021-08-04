@@ -19,7 +19,6 @@ model = load_model("output\model.model")
 mlb = pickle.loads(open("output\model.pickle", "rb").read())
 
 imagePaths = sorted(list(utils_paths.list_images("test_img")))
-result = []
 for imagePath in imagePaths:
     image = cv2.imread(imagePath)
     output = image.copy()
