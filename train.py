@@ -22,7 +22,7 @@ import os
 # 超參數初始化
 EPOCHS = 50
 INIT_LR = 1e-3
-BS = 32
+BS = 32 #批次大小
 IMAGE_DIMS = (96, 96, 3)
 
 # 獲取數據路徑
