@@ -20,6 +20,7 @@ class SimpleVGGNet:
 		if K.image_data_format() == "channels_first":
 			inputShape = (depth, height, width)
 			chanDim = 1
+			
 		# CONV => RELU => POOL
 		model.add(Conv2D(32, (3, 3), padding="same",
 			input_shape=inputShape))
