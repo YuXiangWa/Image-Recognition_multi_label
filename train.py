@@ -75,7 +75,7 @@ model = SimpleVGGNet.build(
 # Adam動態調整學習率
 opt = Adam(lr=INIT_LR, decay=INIT_LR / EPOCHS)
 
-# 損失函數
+# 損失函數 binary cross-entropy 而非 categorical cross-entropy，原因是多標籤分類的目標是將每個輸出的標籤作為一個獨立的伯努利分佈，並且希望單獨懲罰每一個輸出節點。
 model.compile(loss="binary_crossentropy", optimizer=opt,
 	metrics=["accuracy"])
 
