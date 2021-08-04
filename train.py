@@ -47,7 +47,7 @@ data = np.array(data, dtype="float") / 255.0
 labels = np.array(labels)
 
 
-# 制作標籤
+# 制作標籤，將標籤進行  One-hot 編碼
 print("[INFO] 數據標籤:")
 mlb = MultiLabelBinarizer()
 labels = mlb.fit_transform(labels)
