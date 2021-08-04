@@ -79,7 +79,7 @@ opt = Adam(lr=INIT_LR, decay=INIT_LR / EPOCHS)
 model.compile(loss="binary_crossentropy", optimizer=opt,
 	metrics=["accuracy"])
 
-# 訓練網絡
+# 訓練網路
 print("[INFO] 訓練網路...")
 H = model.fit_generator(
 	aug.flow(trainX, trainY, batch_size=BS),
